@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        Admin Paneli
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="~/soft-ui-dashboard-main/assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="~/soft-ui-dashboard-main/assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="~/soft-ui-dashboard-main/assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="~/soft-ui-dashboard-main/assets/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+    @await Html.PartialAsync("_SideBarPartial");
+    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+
+        @RenderBody()
+    </main>
+
+
+    @await Component.InvokeAsync("Notyf")
+    <!--   Core JS Files   -->
+    <script src="~/soft-ui-dashboard-main/assets/js/core/popper.min.js"></script>
+    <script src="~/soft-ui-dashboard-main/assets/js/core/bootstrap.min.js"></script>
+    <script src="~/soft-ui-dashboard-main/assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="~/soft-ui-dashboard-main/assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="~/soft-ui-dashboard-main/assets/js/plugins/chartjs.min.js"></script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="~/soft-ui-dashboard-main/assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    
+   
+</body>
+
+</html>

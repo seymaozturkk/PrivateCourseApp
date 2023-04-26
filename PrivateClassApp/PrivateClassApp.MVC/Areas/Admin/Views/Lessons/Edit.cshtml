@@ -1,0 +1,95 @@
+﻿@model LessonEditViewModel
+
+<h4 class="mt-5">Ders Güncelleme</h4>
+<hr />
+<form asp-area="Admin"
+      asp-controller="Lessons"
+      asp-action="Edit"
+      method="post">
+    <div class="row">
+        <div class="col-5">
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <label class="form-label fs-6" asp-for="Name"></label>
+                        <input class="form-control" asp-for="Name">
+                        <span class="text-danger" asp-validation-for="Name"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fs-6" asp-for="Price"></label>
+                        <input class="form-control" asp-for="Price">
+                        <span class="text-danger" asp-validation-for="Price"></span>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="mb-3 fs-6 text-sm">
+                <span>Oluşturma Tarihi: <span class="form-text">@Model.CreatedDate.ToString()</span></span>
+                <br />
+                <span>Son Güncelleme Tarihi: <span class="form-text">@Model.UpdatedDate.ToString()</span></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Değişiklikleri Kaydet</button>
+            <a asp-area="Admin" asp-controller="Lessons" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-secondary btn-sm">Sil</a>
+        </div>
+        <div class="col-6 ms-4">
+            <div class="mb-3">
+                <label class="form-label fs-6" asp-for="Description"></label>
+                <textarea class="form-control" asp-for="Description"></textarea>
+                <span class="text-danger" asp-validation-for="Description"></span>
+            </div>
+            <div class="d-flex mt-4">
+                <div class="form-check ps-0">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Öğretmen
+                        </button>
+                        <ul class="dropdown-menu overflow-auto" style="height: 300px;">
+                            @foreach (var teacher in Model.Teachers)
+                            {
+                                <li class="dropdown-item">
+                                    <div class="form-check d-flex">
+                                        <input class="form-check-input" type="radio" name="TeacherId" value="@teacher.Id" @if (Model.TeacherId != null)
+                                        {
+                                            @(Model.TeacherId == teacher.Id ? "checked" : "")
+                                        }>
+                                        <label class="form-check-label">@teacher.User.FirstName @teacher.User.LastName</label>
+                                    </div>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                    <span class="text-danger" asp-validation-for="TeacherId"></span>
+                </div>
+                <div class="form-check">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Kategoriler
+                        </button>
+                        <ul class="dropdown-menu overflow-auto" style="height: 300px;">
+                            @foreach (var category in Model.Categories)
+                            {
+                                <li class="dropdown-item">
+                                    <div class="form-check d-flex">
+                                        <input class="form-check-input" type="checkbox" name="SelectedCategories" value="@category.Id" @if (Model.SelectedCategories != null)
+                                        {
+                                            @(Model.SelectedCategories.Any(sc => sc == category.Id) ? "checked" : "")
+                                        }>
+                                        <label class="form-check-label">@category.Name</label>
+                                    </div>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                    <span class="text-danger" asp-validation-for="SelectedCategories"></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+@section Scripts{
+    @await Html.PartialAsync("_ValidationScriptsPartial");
+}

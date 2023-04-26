@@ -1,0 +1,91 @@
+﻿@model UserEditViewModel
+@{
+    var genderList = Enum.GetValues(typeof(EnumGender));
+    var userTypeList = Enum.GetValues(typeof(EnumUserType));
+}
+
+<h4 class="mt-5">Kullanıcı Bilgileri Güncelleme</h4>
+<hr />
+<form asp-area="Admin"
+      asp-controller="Users"
+      asp-action="Edit"
+      method="post">
+    <div class="row">
+        <div class="col-5">
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <label class="form-label fs-6" asp-for="FirstName"></label>
+                        <input class="form-control" asp-for="FirstName">
+                        <span class="text-danger" asp-validation-for="FirstName"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fs-6" asp-for="LastName"></label>
+                        <input class="form-control" asp-for="LastName">
+                        <span class="text-danger" asp-validation-for="LastName"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fs-6" asp-for="UserName"></label>
+                        <input class="form-control" asp-for="UserName">
+                        <span class="text-danger" asp-validation-for="UserName"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fs-6" asp-for="Email"></label>
+                        <input class="form-control" asp-for="Email">
+                        <span class="text-danger" asp-validation-for="Email"></span>
+                    </div>
+                    <div class="mb-3 form-check fs-6">
+                        <input type="checkbox" class="form-check-input" asp-for="EmailConfirmed">
+                        <label class="form-check-label" asp-for="EmailConfirmed"></label>
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="mb-3 fs-6 text-sm">
+                <span>Oluşturma Tarihi: <span class="form-text">@Model.CreatedDate.ToString()</span></span>
+                <br />
+                <span>Son Güncelleme Tarihi: <span class="form-text">@Model.UpdatedDate.ToString()</span></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Değişiklikleri Kaydet</button>
+            <a asp-area="Admin" asp-controller="Users" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-secondary btn-sm">Sil</a>
+        </div>
+        <div class="col-3 ms-4">
+            <div class="mb-3">
+                <label class="form-label fs-6" asp-for="BirthDate"></label>
+                <input type="date" minvalue="1900-01-01" class="form-control" asp-for="BirthDate">
+                <span class="text-danger" asp-validation-for="BirthDate"></span>
+            </div>
+            <h6 class="mt-4 fw-bolder">Cinsiyet</h6>
+			<div class="form-check d-flex">
+            @foreach (var item in genderList)
+            {
+                    <input class="form-check-input" type="radio" asp-for="Gender" value="@item">
+                    <label class="form-check-label me-5" for="Gender">
+                        @item
+                    </label>
+            }
+            </div>
+            <span class="text-danger" asp-validation-for="Gender"></span>
+        </div>
+        <div class="col-3 ms-4">
+            <h4>Kullanıcı Tipi</h4>
+            @foreach (var item in userTypeList)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" asp-for="UserType" value="@item">
+                    <label class="form-check-label" for="UserType">
+                        @item
+                    </label>
+                </div>
+            }
+            <span class="text-danger" asp-validation-for="UserType"></span>
+            
+        </div>
+    </div>
+
+</form>
+
+@section Scripts{
+    @await Html.PartialAsync("_ValidationScriptsPartial");
+}

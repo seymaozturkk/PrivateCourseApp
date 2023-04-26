@@ -1,0 +1,102 @@
+﻿@model List<UserManageViewModel>
+
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card mb-4">
+                <div class="d-flex justify-content-between card-header pb-0">
+                    <h4>Kullanıcı Tablosu</h4>
+                    <div class="ms-md-auto pe-md-3 d-flex align-items-center me-4">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-search" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Ara...">
+                        </div>
+                        <a class="btn btn-primary btn-sm mb-0 me-5 ms-5"
+                            asp-area="Admin"
+                            asp-controller="Users"
+                            asp-action="Create"
+                        >Yeni Kullanıcı</a>
+                        
+                    </div>
+                </div>
+                <div class="card-body px-0 pt-0 pb-2">
+                    <div class="table-responsive p-0">
+                        <table class="table align-items-center mb-0">
+                            <thead>
+                                <tr>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Kullanıcı</th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Kullanıcı Tipi</th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Güncelleme Tarihi</th>
+                                    <th class="text-center opacity-7"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var user in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex px-2 py-1">
+                                                <div class="d-flex flex-column justify-content-center">
+                                                    <h6 class="mb-0 text-sm">@user.FirstName @user.LastName</h6>
+                                                    <p class="text-xs text-secondary mb-0">@user.Email</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="text-xs font-weight-bold mb-0">@user.UserType</p>
+                                        </td>
+                                        <td class="align-middle text-center">
+                                            <span class="text-secondary text-xs font-weight-bold">@user.UpdatedDate.ToShortDateString()</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <a 
+                                                asp-area="Admin"
+                                                asp-controller="Users"
+                                                asp-action="Edit"
+                                                asp-route-id="@user.Id"
+                                                class="btn btn-primary btn-sm font-weight-bold text-xs m-0" data-toggle="tooltip"
+                                            >
+                                                Düzenle
+                                            </a>
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-secondary btn-sm font-weight-bold text-xs m-0" data-bs-toggle="modal" data-bs-target="#exampleModal_@user.Id">
+                                                Sil
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal_@user.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-start fs-6 fw-light">
+                                                            Kalıcı olarak silmek istediğinize emin misiniz?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary btn-sm font-weight-bold text-xs" data-bs-dismiss="modal">Vazgeç</button>
+                                                            <a
+                                                                class="btn btn-primary btn-sm font-weight-bold text-xs"
+                                                                asp-area="Admin"
+                                                                asp-controller="Users"
+                                                                asp-action="Delete"
+                                                                asp-route-id="@user.Id"
+                                                            >
+                                                            Kalıcı Olarak Sil</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
