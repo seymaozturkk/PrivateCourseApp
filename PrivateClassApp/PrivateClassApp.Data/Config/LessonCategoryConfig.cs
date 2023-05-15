@@ -21,7 +21,7 @@ namespace PrivateClassApp.Data.Config
                 new LessonCategory { LessonId = 4, CategoryId = 2 },
                 new LessonCategory { LessonId = 5, CategoryId = 5 },
                 new LessonCategory { LessonId = 6, CategoryId = 4 },
-                new LessonCategory { LessonId = 7, CategoryId = 3 },
+                new LessonCategory { LessonId = 7, CategoryId = 1 },
                 new LessonCategory { LessonId = 8, CategoryId = 9 },
                 new LessonCategory { LessonId = 9, CategoryId = 10 },
                 new LessonCategory { LessonId = 10, CategoryId = 11 },

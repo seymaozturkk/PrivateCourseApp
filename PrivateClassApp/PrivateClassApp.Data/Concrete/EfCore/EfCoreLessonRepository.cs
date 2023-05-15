@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace PrivateClassApp.Data.Concrete.EfCore
 {
@@ -37,14 +38,23 @@ namespace PrivateClassApp.Data.Concrete.EfCore
             await AppContext.SaveChangesAsync();
         }
 
-        public async Task<List<Lesson>> GetAllFullDataAsync()
+        public async Task<List<Lesson>> GetAllFullDataAsync(string categoryurl = null)
         {
-            return await AppContext
+            var lessons = AppContext
                 .Lessons
                 .Include(l => l.LessonCategories)
                 .ThenInclude(lc => lc.Category)
                 .Include(l => l.Teacher)
-                .ToListAsync();
+                .AsQueryable();
+            if (categoryurl != null)
+            {
+                lessons = lessons
+                    .Where(b => b.LessonCategories.Any(bc => bc.Category.Url == categoryurl));
+            }
+
+            return await lessons
+                        .ToListAsync();
+
         }
 
         public async Task<Lesson> GetByIdFullDataAsync(int id)

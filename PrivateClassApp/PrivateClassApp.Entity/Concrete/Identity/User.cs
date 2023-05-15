@@ -18,6 +18,7 @@ namespace PrivateClassApp.Entity.Concrete.Identity
         public EnumGender Gender { get; set; }
         public DateTime BirthDate { get; set; }
         public EnumUserType UserType { get; set; }
+        public List<LessonLike> LessonLikes { get; set; }
 
     }
 

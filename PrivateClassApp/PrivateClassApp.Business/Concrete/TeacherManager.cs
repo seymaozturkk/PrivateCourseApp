@@ -53,7 +53,12 @@ namespace PrivateClassApp.Business.Concrete
             return await _teacherRepository.GetTeacherByUserId(userId);
         }
 
-        public void Update(Teacher teacher)
+		public async Task<Teacher> GetTeacherFullDataAsync(int id)
+		{
+            return await _teacherRepository.GetTeacherFullDataAsync(id);
+		}
+
+		public void Update(Teacher teacher)
         {
             _teacherRepository.Update(teacher);
         }

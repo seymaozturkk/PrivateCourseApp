@@ -24,7 +24,7 @@ namespace PrivateClassApp.Data.Config
             builder.HasData(
                 new Category { Id = 1, CreatedDate = DateTime.Now, UpdatedDate = DateTime.Now, Name = "Edebiyat", Url = "edebiyat" },
                 new Category { Id = 2, CreatedDate = DateTime.Now, UpdatedDate = DateTime.Now, Name = "Matematik", Url = "matematik" },
-                new Category { Id = 3, CreatedDate = DateTime.Now, UpdatedDate = DateTime.Now, Name = "Edebiyat", Url = "edebiyat" },
+                new Category { Id = 3, CreatedDate = DateTime.Now, UpdatedDate = DateTime.Now, Name = "Almanca", Url = "almanca" },
                 new Category { Id = 4, CreatedDate = DateTime.Now, UpdatedDate = DateTime.Now, Name = "Müzik", Url = "muzik" },
                 new Category { Id = 5, CreatedDate = DateTime.Now, UpdatedDate = DateTime.Now, Name = "Türkçe", Url = "turkce" },
                 new Category { Id = 6, CreatedDate = DateTime.Now, UpdatedDate = DateTime.Now, Name = "Kimya", Url = "kimya" },

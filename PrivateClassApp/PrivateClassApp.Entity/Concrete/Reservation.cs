@@ -12,18 +12,10 @@ namespace PrivateClassApp.Entity.Concrete
         public int Id { get; set; }
         public int LessonId { get; set; }
         public Lesson Lesson { get; set; }
-        public int TeacherId { get; set; }
-        public Teacher Teacher { get; set; }
-        public int StudentId { get; set; }
-        public Student Student { get; set; }
+        public string UserId { get; set; }
         public DateTime ReservationDate { get; set; }
         public string ZoomLink { get; set; }
-        public EnumReservationState ReservationState { get; set; }
 
     }
 
-    public enum EnumReservationState
-    {
-        Geçmiş, Aktif
-    }
 }

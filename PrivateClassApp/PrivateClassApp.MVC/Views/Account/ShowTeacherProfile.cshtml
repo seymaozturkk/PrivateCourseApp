@@ -1,0 +1,271 @@
+﻿@model TeacherViewModel
+@{
+    var dayList = Enum.GetValues(typeof(EnumDay));
+}
+<input type="hidden" id="teacherId" value="@Model.Id" />
+<hr class="mt-0" />
+<div class="container">
+    <div class="row col-md-12">
+        <div class="col-md-2 col-6">
+            <img src="~/images/Teachers/@Model.ImageUrl" class="img-fluid rounded-circle p-3m-auto" alt="...">
+        </div>
+        <div class="col-md-10 col-6 mt-2">
+            <div class="d-flex justify-content-between">
+                <h1>@Model.FirstName @Model.LastName <span style="position:relative; bottom:15px;"><i class="fa-solid fa-circle-check mb-4 @(Model.IsApproved == false?  "d-none": "d-inline")" style="color: #39bec0; font-size:15px;"></i></span></h1>
+                <a class="btn btn-primary h-50" asp-area="" asp-controller="Teachers" asp-action="EditProfile">Profili Düzenle</a>
+            </div>
+            <h5>@Model.Title</h5>
+            <p>@Model.About.ShortInfo</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <h4>Deneyim</h4>
+            <p>@Model.About.Experience</p>
+            <h4>Eğitim</h4>
+            @foreach (var item in @Model.About.Education.UniversityEducations)
+            {
+                <p><span class="fw-bold">@item.Description: </span>@item.University.Name</p>
+            }
+            <p><span class="fw-bold">Diğer Eğitimler: </span>@Model.About.Education.OtherEducations</p>
+
+        </div>
+        <div class="col-md-6 col-12">
+            <h4>Uygunluklar</h4>
+            @foreach (var day in dayList)
+            {
+                <span class="fw-bold deleteDay" id="">@day:</span>
+                @if (Model.TeacherAvailabilities != null)
+                {
+                    @foreach (var item in Model.TeacherAvailabilities)
+                    {
+
+                        <span class="deleteTime" id="">@(item.DayOfWeek.ToString() == day.ToString() ? $"{item.Time.ToString("hh':'mm")}" : "")</span>
+
+                        <a class="@(item.DayOfWeek.ToString() == day.ToString() ? "d-inline" : "d-none")" style="cursor:pointer;" onclick="deleteTeacherAvailability(@item.Id)"> <i class="fa-solid fa-circle-minus" style="color: #c21e1e;"></i></a>
+                    }
+                    <br />
+                }
+            }
+            
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal_@Model.Id">
+                Uygunluk Ekle
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal_@Model.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Uygunluk Ekle</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="time">Gün Seç:</label>
+
+                                        <select class="form-select" name="dayOfWeek">
+                                            @foreach (var item in dayList)
+                                            {
+                                                <option value="@item">@item</option>
+                                            }
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="time">Saat Seç:</label>
+                                        <div class="input-group date" id="timePicker">
+                                            <input type="text" class="form-control timePicker">
+                                            <span class="input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" onclick="saveTeacherAvailability()">Kaydet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal_@Model.FirstName">
+                Derslerini Gör
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal_@Model.FirstName" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"> @Model.FirstName @Model.LastName Dersleri</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                @foreach (var item in Model.Lessons)
+                                {
+                                    <!-- Button trigger modal -->
+                                    <a class="col-lg-6 col-12 text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal1_@item.Id" style="cursor:pointer;">
+
+                                        <div class="card mb-3 p-0" style="height: 220px;">
+                                            <div class="row g-0">
+                                                <div class="col-4">
+                                                    <img src="~/images/Teachers/@item.Teacher.ImageUrl" class="img-fluid rounded-circle p-3" alt="...">
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="card-body">
+                                                        <div class="row d-flex justify-content-between">
+                                                            <div class="col-6 p-0 ps-3">
+                                                                <h4 class="card-title">@item.Teacher.User.FirstName @item.Teacher.User.LastName <i class="fa-solid fa-circle-check @(item.Teacher.IsApproved == false?  "d-none": "d-inline")" style="color: #39bec0; font-size:15px;"></i></h4>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <btn class="btn btn-primary me-2 px-4">@($"{@item.Price:C2}")</btn>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="card-title">@item.Name</h5>
+
+                                                        <p class="card-text" style="font-size:15px;">@item.Description</p>
+                                                        <p class="card-text"><small class="text-body-secondary">Son Güncelleme Tarihi: @item.UpdatedDate.ToShortDateString() </small></p>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                    <a class="btn btn-danger w-25 h-25 d-inline" asp-area="" asp-controller="Teachers" asp-action="DeleteLesson" asp-route-id="@item.Id">Dersi Sil</a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal1_@item.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3 class="modal-title fs-5" id="exampleModalLabel">Ders Detayı</h3>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h5>@item.Name:</h5>
+                                                            <p>@item.Description</p>
+                                                            <h5 class="d-inline">Fiyat:</h5> <p class="d-inline">@($"{@item.Price:C2}")</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <h5>Kategoriler:</h5>
+                                                            <ul>
+                                                                @foreach (var category in item.Categories)
+                                                                {
+                                                                    <li>@category.Name</li>
+                                                                }
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h5 class="mt-3">Eğitmen:</h5>
+                                                        <div class="col-md-3 ps-0">
+                                                            <img src="~/images/Teachers/@item.Teacher.ImageUrl" class="img-fluid rounded-circle p-3 py-0" alt="...">
+                                                        </div>
+                                                        <div class="col-md-9 mt-3 pe-5">
+                                                            <div class="fw-bold">@item.Teacher.User.FirstName @item.Teacher.User.LastName</div>
+                                                            <p class="d-inline">@item.Teacher.About.ShortInfo</p> <a class="m-0 p-0 " asp-area="" asp-controller="Teachers" asp-action="ShowTeacherDetails" asp-route-id="@item.Teacher.Id">Detay</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-outline-danger text-decoration-none" asp-area="" asp-controller="Likes" asp-action="AddToLike" asp-route-id="@item.Id"><i class="fa-regular fa-heart" style="color: #e50606;"></i></a>
+                                                    <a class="btn btn-primary text-decoration-none" asp-area="" asp-controller="Reservations" asp-action="Index" asp-route-id="@item.Id">Rezervasyon Yap</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                            <a class="btn btn-primary" asp-area="" asp-controller="Teachers" asp-action="AddLesson">Ders Ekle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn-primary" asp-area="" asp-controller="Reservations" asp-action="ShowTeacherReservations">Eğitmen Rezervasyonları</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@section Scripts{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+
+    <script>
+        var firstOpen = true;
+        var time;
+
+        $('#timePicker').datetimepicker({
+            useCurrent: false,
+            format: "HH:mm"
+        }).on('dp.show', function () {
+            if (firstOpen) {
+                time = moment().startOf('day');
+                firstOpen = false;
+            } else {
+                time = "01:00"
+            }
+            $(this).data('DateTimePicker').date(time);
+        });
+
+        function saveTeacherAvailability(){
+            var data = {
+                TeacherId: $("#teacherId").val(),
+                DayOfWeek: $('select[name=dayOfWeek] option').filter(':selected').val(),
+                Time: $("#timePicker input").val()
+            }
+            $.ajax({
+                url: '@Url.Action("AddTeacherAvailability","Teachers")',
+                type: 'POST',
+                dataType: 'json',
+                data: data,
+                success: function (result) {
+                    if(result){
+                        window.location.href = '/account/ShowProfile';
+                    }
+                    else{
+                        alert("Hatalı giriş yaptınız!")
+                    }
+                    
+                },
+                error: function (hata) {
+
+                }
+            });
+        }
+        function deleteTeacherAvailability(id) {
+            $.ajax({
+                url: '@Url.Action("DeleteTeacherAvailability","Teachers")',
+                type: 'POST',
+                dataType: 'json',
+                data: {id: id},
+                success: function (result) {
+                    window.location.href = '/Account/ShowProfile';
+                },
+                error: function (hata) {
+
+                }
+            });
+        }
+    </script>
+
+
+}
+@section Styles{
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+}

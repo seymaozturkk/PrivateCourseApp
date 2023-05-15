@@ -1,4 +1,5 @@
-﻿using PrivateClassApp.Data.Abstract;
+﻿using Microsoft.EntityFrameworkCore;
+using PrivateClassApp.Data.Abstract;
 using PrivateClassApp.Data.Context;
 using PrivateClassApp.Entity.Concrete;
 using System;
@@ -18,5 +19,17 @@ namespace PrivateClassApp.Data.Concrete.EfCore
         {
             get { return _dbContext as PrivateClassAppContext; }
         }
-    }
+
+		public async Task<Education> GetEducationFullDataAsync(int id)
+		{
+            return await AppContext
+                .Educations
+                .Where(x => x.Id == id)
+                .Include(x => x.UniversityEducations)
+                .ThenInclude(x => x.University)
+                .Include(x => x.About)
+                .ThenInclude(x => x.Teacher)
+                .FirstOrDefaultAsync();
+		}
+	}
 }

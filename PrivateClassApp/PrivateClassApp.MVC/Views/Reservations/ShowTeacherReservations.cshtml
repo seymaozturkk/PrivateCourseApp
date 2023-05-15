@@ -1,0 +1,143 @@
+﻿@model List<UserReservationsModel>
+
+<hr class="m-0 p-0" />
+
+<div class="container mt-2 mb-5">
+    <h3 class="text-center">Eğitmen Rezervasyonları</h3>
+    <hr />
+    <div class="row mt-2">
+        <div class="col-md-7">
+            <h4 class="text-center">Gelecek Rezervasyonlarım</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Tarih</th>
+                        <th scope="col">Ders</th>
+                        <th scope="col">Ücret</th>
+                        <th scope="col">Zoom Linki</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        @if (item.ReservationDate > DateTime.Now)
+                        {
+                            <tr>
+                                <td>@item.ReservationDate</td>
+                                <td><a style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal_@item.Lesson.Id">@item.Lesson.Name</a></td>
+                                <td>@item.Lesson.Price</td>
+                                <td><a href="@item.ZoomLink">@item.ZoomLink.Substring(0,10)...</a></td>
+                                <td><a class="btn btn-danger" asp-area="" asp-controller="Reservations" asp-action="CancelReservation" asp-route-id="@item.Id">İptal</a></td>
+
+                            </tr>
+                            <div class="modal fade" id="exampleModal_@item.Lesson.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Ders Detayı</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card mb-3 p-0" style="height: 220px;">
+                                                <div class="row g-0">
+                                                    <div class="col-4">
+                                                        <img src="~/images/Teachers/@item.Lesson.Teacher.ImageUrl" class="img-fluid rounded-circle p-3" alt="...">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="card-body">
+                                                            <div class="row d-flex justify-content-between">
+                                                                <div class="col-6 p-0 ps-3">
+                                                                    <h4 class="card-title">@item.Lesson.Teacher.User.FirstName @item.Lesson.Teacher.User.LastName <i class="fa-solid fa-circle-check @(item.Lesson.Teacher.IsApproved == false?  "d-none": "d-inline")" style="color: #39bec0; font-size:15px;"></i></h4>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <btn class="btn btn-primary me-2 px-4">@($"{@item.Lesson.Price:C2}")</btn>
+                                                                </div>
+                                                            </div>
+                                                            <h5 class="card-title">@item.Lesson.Name</h5>
+
+                                                            <p class="card-text" style="font-size:15px;">@item.Lesson.Description</p>
+                                                            <p class="card-text"><small class="text-body-secondary">Son Güncelleme Tarihi: @item.Lesson.UpdatedDate.ToShortDateString() </small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-5">
+            <h4 class="text-center">Geçmiş Rezervasyonlarım</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Tarih</th>
+                        <th scope="col">Ders</th>
+                        <th scope="col">Ücret</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        @if (item.ReservationDate < DateTime.Now)
+                        {
+                            <tr>
+                                <td>@item.ReservationDate</td>
+                                <td><a style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal_@item.Lesson.Id">@item.Lesson.Name</a></td>
+                                <td height="55">@item.Lesson.Price</td>
+                            </tr>
+                            <div class="modal fade" id="exampleModal_@item.Lesson.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Ders Detayı</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card mb-3 p-0" style="height: 220px;">
+                                                <div class="row g-0">
+                                                    <div class="col-4">
+                                                        <img src="~/images/Teachers/@item.Lesson.Teacher.ImageUrl" class="img-fluid rounded-circle p-3" alt="...">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="card-body">
+                                                            <div class="row d-flex justify-content-between">
+                                                                <div class="col-6 p-0 ps-3">
+                                                                    <h4 class="card-title">@item.Lesson.Teacher.User.FirstName @item.Lesson.Teacher.User.LastName <i class="fa-solid fa-circle-check @(item.Lesson.Teacher.IsApproved == false?  "d-none": "d-inline")" style="color: #39bec0; font-size:15px;"></i></h4>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <btn class="btn btn-primary me-2 px-4">@($"{@item.Lesson.Price:C2}")</btn>
+                                                                </div>
+                                                            </div>
+                                                            <h5 class="card-title">@item.Lesson.Name</h5>
+
+                                                            <p class="card-text" style="font-size:15px;">@item.Lesson.Description</p>
+                                                            <p class="card-text"><small class="text-body-secondary">Son Güncelleme Tarihi: @item.Lesson.UpdatedDate.ToShortDateString() </small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

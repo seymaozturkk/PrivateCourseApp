@@ -8,6 +8,7 @@ using PrivateClassApp.Data.Abstract;
 using PrivateClassApp.Data.Concrete.EfCore;
 using PrivateClassApp.Data.Context;
 using PrivateClassApp.Entity.Concrete.Identity;
+using PrivateClassApp.MVC.EmailServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -56,25 +57,33 @@ builder.Services.AddScoped<IAboutService, AboutManager>();
 builder.Services.AddScoped<ICategoryService, CategoryManager>();
 builder.Services.AddScoped<IEducationService, EducationManager>();
 builder.Services.AddScoped<ILessonService, LessonManager>();
-builder.Services.AddScoped<ILikedItemService, LikedItemManager>();
-builder.Services.AddScoped<ILikeService, LikeManager>();
+builder.Services.AddScoped<ILessonLikeService, LessonLikeManager>();
 builder.Services.AddScoped<IReservationService, ReservationManager>();
 builder.Services.AddScoped<IStudentService, StudentManager>();
 builder.Services.AddScoped<ITeacherService, TeacherManager>();
 builder.Services.AddScoped<ITeacherAvailabilityService, TeacherAvailabilityManager>();
 builder.Services.AddScoped<IUniversityService, UniversityManager>();
+builder.Services.AddScoped<IUniversityEducationService, UniversityEducationManager>();
 
 builder.Services.AddScoped<IAboutRepository, EfCoreAboutRepository>();
 builder.Services.AddScoped<ICategoryRepository, EfCoreCategoryRepository>();
 builder.Services.AddScoped<IEducationRepository, EfCoreEducationRepository>();
 builder.Services.AddScoped<ILessonRepository, EfCoreLessonRepository>();
-builder.Services.AddScoped<ILikedItemRepository, EfCoreLikedItemRepository>();
-builder.Services.AddScoped<ILikeRepository, EfCoreLikeRepository>();
+builder.Services.AddScoped<ILessonLikeRepository, EfCoreLessonLikeRepository>();
 builder.Services.AddScoped<IReservationRepository, EfCoreReservationRepository>();
 builder.Services.AddScoped<IStudentRepository, EfCoreStudentRepository>();
 builder.Services.AddScoped<ITeacherRepository, EfCoreTeacherRepository>();
 builder.Services.AddScoped<ITeacherAvailabilityRepository, EfCoreTeacherAvailabilityRepository>();
 builder.Services.AddScoped<IUniversityRepository, EfCoreUniversityRepository>();
+builder.Services.AddScoped<IUniversityEducationRepository, EfCoreUniversityEducationRepository>();
+
+builder.Services.AddScoped<IEmailSender, SmtpEmailSender>(options => new SmtpEmailSender(
+    builder.Configuration["EmailSender:Host"],
+    builder.Configuration.GetValue<int>("EmailSender:Port"),
+    builder.Configuration.GetValue<bool>("EmailSender:EnableSSL"),
+    builder.Configuration["EmailSender:UserName"],
+    builder.Configuration["EmailSender:Password"]
+  ));
 
 builder.Services.AddNotyf(config =>
 {
@@ -95,6 +104,12 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.UseNotyf();
+
+app.MapControllerRoute(
+    name: "categories",
+    pattern: "lessons/{categoryurl?}",
+    defaults: new { controller = "Lessons", action = "Index" }
+    );
 
 app.MapAreaControllerRoute(
     name: "Admin",

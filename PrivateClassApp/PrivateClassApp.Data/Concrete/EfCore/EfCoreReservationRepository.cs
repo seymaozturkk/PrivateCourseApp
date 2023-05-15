@@ -24,8 +24,7 @@ namespace PrivateClassApp.Data.Concrete.EfCore
             var reservations = AppContext
                 .Reservations
                 .Include(r => r.Lesson)
-                .Include(r => r.Teacher)
-                .Include(r => r.Student)
+                .ThenInclude(r => r.Teacher)
                 .AsQueryable();
             if (dateSort)
             {
@@ -36,9 +35,9 @@ namespace PrivateClassApp.Data.Concrete.EfCore
                 reservations = reservations.OrderBy(r => r.ReservationDate);
 
             }
-            if (!String.IsNullOrEmpty(userId))
+            if (userId != null)
             {
-                reservations = reservations.Where(r => r.Teacher.UserId == userId || r.Student.UserId == userId);
+                reservations = reservations.Where(r => r.UserId == userId);
             }
             return await reservations.ToListAsync();
         }

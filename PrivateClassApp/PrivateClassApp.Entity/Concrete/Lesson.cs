@@ -19,5 +19,6 @@ namespace PrivateClassApp.Entity.Concrete
         public int TeacherId { get; set; }
         public Teacher Teacher { get; set; }
         public List<LessonCategory> LessonCategories { get; set; }
+        public List<LessonLike> LessonLikes { get; set; }
     }
 }

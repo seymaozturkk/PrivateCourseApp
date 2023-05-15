@@ -1,4 +1,5 @@
-﻿using PrivateClassApp.Data.Abstract;
+﻿using Microsoft.EntityFrameworkCore;
+using PrivateClassApp.Data.Abstract;
 using PrivateClassApp.Data.Context;
 using PrivateClassApp.Entity.Concrete;
 using System;
@@ -17,6 +18,24 @@ namespace PrivateClassApp.Data.Concrete.EfCore
         PrivateClassAppContext AppContext
         {
             get { return _dbContext as PrivateClassAppContext; }
+        }
+
+        public async Task<List<TeacherAvailability>> GetAvailabilitiesByTeacherIdAsync(int id)
+        {
+            return await AppContext
+                .TeacherAvailabilities
+                .Where(ta => ta.TeacherId == id)
+                .ToListAsync();
+
+        }
+
+        public async Task<TeacherAvailability> GetAvailabilityByTeacherIdByTimeAsync(int id, TimeSpan time)
+        {
+            return await AppContext
+                .TeacherAvailabilities
+                .Where(ta => ta.TeacherId == id)
+                .Where(ta => ta.Time==time)
+                .FirstOrDefaultAsync();
         }
     }
 }

@@ -14,7 +14,7 @@ namespace PrivateClassApp.Business.Abstract
         public Task<List<Lesson>> GetAllAsync();
         public void Update(Lesson lesson);
         public void Delete(Lesson lesson);
-        public Task<List<Lesson>> GetAllFullDataAsync();
+        public Task<List<Lesson>> GetAllFullDataAsync(string categoryurl);
         public Task<Lesson> GetByIdFullDataAsync(int id);
         public Task UpdateLesson(Lesson lesson, int[] SelectedCategories);
         public Task CreateLesson(Lesson lesson, int[] SelectedCategories);

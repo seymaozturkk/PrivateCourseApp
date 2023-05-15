@@ -11,6 +11,7 @@ namespace PrivateClassApp.Data.Abstract
     {
         Task<List<Teacher>> GetAllFullDataAsync();
         Task<Teacher> GetTeacherByUserId(string userId);
-        public Task CreateTeacherAsync(Teacher teacher);
+		Task<Teacher> GetTeacherFullDataAsync(int id);
+		public Task CreateTeacherAsync(Teacher teacher);
     }
 }

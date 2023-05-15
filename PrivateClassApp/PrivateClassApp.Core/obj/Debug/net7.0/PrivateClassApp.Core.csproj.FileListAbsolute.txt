@@ -1,15 +1,3 @@
-C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\bin\Debug\net7.0\PrivateClassApp.Core.deps.json
-C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\bin\Debug\net7.0\PrivateClassApp.Core.dll
-C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\bin\Debug\net7.0\PrivateClassApp.Core.pdb
-C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.csproj.AssemblyReference.cache
-C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.AssemblyInfoInputs.cache
-C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.AssemblyInfo.cs
-C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.dll
-C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\refint\PrivateClassApp.Core.dll
-C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.pdb
-C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\ref\PrivateClassApp.Core.dll
 C:\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\bin\Debug\net7.0\PrivateClassApp.Core.deps.json
 C:\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\bin\Debug\net7.0\PrivateClassApp.Core.dll
 C:\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\bin\Debug\net7.0\PrivateClassApp.Core.pdb
@@ -22,3 +10,27 @@ C:\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\ne
 C:\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\refint\PrivateClassApp.Core.dll
 C:\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.pdb
 C:\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\ref\PrivateClassApp.Core.dll
+C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\bin\Debug\net7.0\PrivateClassApp.Core.deps.json
+C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\bin\Debug\net7.0\PrivateClassApp.Core.dll
+C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\bin\Debug\net7.0\PrivateClassApp.Core.pdb
+C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.dll
+C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\refint\PrivateClassApp.Core.dll
+C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.pdb
+C:\Users\Admin\Documents\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\ref\PrivateClassApp.Core.dll
+C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Core\bin\Debug\net7.0\PrivateClassApp.Core.deps.json
+C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Core\bin\Debug\net7.0\PrivateClassApp.Core.dll
+C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Core\bin\Debug\net7.0\PrivateClassApp.Core.pdb
+C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.csproj.AssemblyReference.cache
+C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.AssemblyInfoInputs.cache
+C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.AssemblyInfo.cs
+C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.dll
+C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\refint\PrivateClassApp.Core.dll
+C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.pdb
+C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\ref\PrivateClassApp.Core.dll

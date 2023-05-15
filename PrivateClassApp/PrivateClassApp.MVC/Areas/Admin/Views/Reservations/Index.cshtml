@@ -1,5 +1,92 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model List<ReservationModel>
+@await Html.PartialAsync("_HamburgerPartial")
+
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card mb-4">
+                <div class="d-flex justify-content-between card-header pb-0">
+                    <h4>Rezervasyonlar</h4>
+                    <div class="ms-md-auto pe-md-3 d-flex align-items-center me-4">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-search" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Ara...">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body px-0 pt-0 pb-2">
+                    <div class="table-responsive p-0">
+                        <table class="table align-items-center mb-0">
+                            <thead>
+                                <tr>
+                                    <th class="opacity-7">Ders</th>
+                                    <th class="text-center opacity-7">Eğitmen</th>
+                                    <th class="text-center opacity-7">Rezervasyon Tarihi</th>
+                                    <th class="opacity-7">Öğrenci</th>
+                                    <th class="text-center opacity-7"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var reservation in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex px-2 py-1">
+                                                <div class="">
+                                                    <span class="text-secondary ps-2 text-xs font-weight-bold">@reservation.Lesson.Name</span>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="align-middle text-center">
+                                            <span class="text-secondary text-xs font-weight-bold">@reservation.Lesson.Teacher.User.FirstName @reservation.Lesson.Teacher.User.LastName</span>
+                                        </td>
+                                        <td class="align-middle text-center">
+                                            <span class="text-secondary text-xs font-weight-bold">@reservation.ReservationDate.ToString()</span>
+                                        </td>
+                                        <td class="ps-4">
+                                            <span class="text-secondary text-xs font-weight-bold">@reservation.ReservationUser.FirstName @reservation.ReservationUser.LastName</span>
+
+                                        </td>
+                                        <td class="text-center">
+                                           
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-secondary btn-sm font-weight-bold text-xs m-0" data-bs-toggle="modal" data-bs-target="#exampleModal_@reservation.Id">
+                                                Sil
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal_@reservation.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Rezervasyon İptali</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-start fs-6 fw-light">
+                                                            Kalıcı olarak silmek istediğinize emin misiniz?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary btn-sm font-weight-bold text-xs" data-bs-dismiss="modal">Vazgeç</button>
+                                                            <a class="btn btn-primary btn-sm font-weight-bold text-xs"
+                                                           asp-area="Admin"
+                                                           asp-controller="Reservations"
+                                                           asp-action="CancelReservation"
+                                                           asp-route-id="@reservation.Id">
+                                                                Kalıcı Olarak Sil
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

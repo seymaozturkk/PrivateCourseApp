@@ -1,4 +1,5 @@
 ﻿using AspNetCoreHero.ToastNotification.Abstractions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -8,11 +9,14 @@ using PrivateClassApp.Data.Abstract;
 using PrivateClassApp.Entity.Concrete;
 using PrivateClassApp.Entity.Concrete.Identity;
 using PrivateClassApp.MVC.Areas.Admin.Models.ViewModels;
+using System.Data;
 
 namespace PrivateClassApp.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class LessonsController : Controller
+	[Authorize(Roles = "Admin")]
+
+	public class LessonsController : Controller
     {
         private readonly UserManager<User> _userManager;
         private readonly ILessonService _lessonService;
@@ -31,7 +35,7 @@ namespace PrivateClassApp.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var lessons = await _lessonService.GetAllFullDataAsync();
+            var lessons = await _lessonService.GetAllFullDataAsync(null);
             var teachers = await _teacherService.GetAllAsync();
             List<LessonViewModel> lessonList = new List<LessonViewModel>();
             lessonList = lessons.Select(l => new LessonViewModel

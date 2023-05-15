@@ -1,4 +1,5 @@
 ﻿using AspNetCoreHero.ToastNotification.Abstractions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -7,11 +8,14 @@ using PrivateClassApp.Core;
 using PrivateClassApp.Entity.Concrete;
 using PrivateClassApp.Entity.Concrete.Identity;
 using PrivateClassApp.MVC.Areas.Admin.Models.ViewModels;
+using System.Data;
 
 namespace PrivateClassApp.MVC.Areas.Admin.Controllers
 {
-        [Area("Admin")]
-    public class RolesController : Controller
+    [Area("Admin")]
+	[Authorize(Roles = "Admin")]
+
+	public class RolesController : Controller
     {
         private readonly RoleManager<Role> _roleManager;
         private readonly UserManager<User> _userManager;

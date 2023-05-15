@@ -1,0 +1,8 @@
+﻿@model List<TeacherAvailabilityModel>
+
+<div class="row text-center mx-0">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-2 col-4 my-1 px-2"><div class="cell py-1" onclick="cellClick('@item.Id')" id="cell_@item.Id" data-id="@item.Id">@item.Time.ToString("hh':'mm")</div></div>
+    }
+</div>

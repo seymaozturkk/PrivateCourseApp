@@ -1,0 +1,75 @@
+﻿@model List<LessonModel>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <!-- Button trigger modal -->
+        <a class="col-lg-6 col-12 text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal_@item.Id" style="cursor:pointer;">
+            <div class="card mb-3 p-0" style="height: 220px;">
+                <div class="row g-0">
+                    <div class="col-4">
+                        <img src="~/images/Teachers/@item.Teacher.ImageUrl" class="img-fluid rounded-circle p-3" alt="...">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <div class="row d-flex justify-content-between">
+                                <div class="col-6 p-0 ps-3">
+                                    <h4 class="card-title">@item.Teacher.User.FirstName @item.Teacher.User.LastName <i class="fa-solid fa-circle-check @(item.Teacher.IsApproved == false?  "d-none": "d-inline")" style="color: #39bec0; font-size:15px;"></i></h4>
+                                </div>
+                                <div class="col-6">
+                                    <btn class="btn btn-primary me-2 px-4">@($"{@item.Price:C2}")</btn>
+                                </div>
+                            </div>
+                            <h5 class="card-title">@item.Name</h5>
+
+                            <p class="card-text" style="font-size:15px;">@item.Description</p>
+                            <p class="card-text"><small class="text-body-secondary">Son Güncelleme Tarihi: @item.UpdatedDate.ToShortDateString() </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal_@item.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title fs-5" id="exampleModalLabel">Ders Detayı</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>@item.Name:</h5>
+                                <p>@item.Description</p>
+                                <h5 class="d-inline">Fiyat:</h5> <p class="d-inline">@($"{@item.Price:C2}")</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Kategoriler:</h5>
+                                <ul>
+                                    @foreach (var category in item.Categories)
+                                    {
+                                        <li>@category.Name</li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5 class="mt-3">Eğitmen:</h5>
+                            <div class="col-md-3 ps-0">
+                                <img src="~/images/Teachers/@item.Teacher.ImageUrl" class="img-fluid rounded-circle p-3 py-0" alt="...">
+                            </div>
+                            <div class="col-md-9 mt-3 pe-5">
+                                <div class="fw-bold">@item.Teacher.User.FirstName @item.Teacher.User.LastName</div>
+                                <p class="d-inline">@item.Teacher.About.ShortInfo</p> <a class="m-0 p-0 " asp-area="" asp-controller="Teachers" asp-action="ShowTeacherDetails" asp-route-id="@item.Teacher.Id">Detay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-outline-danger text-decoration-none" asp-area="" asp-controller="Likes" asp-action="AddToLike" asp-route-id="@item.Id"><i class="fa-regular fa-heart" style="color: #e50606;"></i></a>
+                        <a class="btn btn-primary text-decoration-none" asp-area="" asp-controller="Reservations" asp-action="Index" asp-route-id="@item.Id">Rezervasyon Yap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

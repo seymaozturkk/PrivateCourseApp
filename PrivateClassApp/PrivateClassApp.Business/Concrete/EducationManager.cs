@@ -38,7 +38,12 @@ namespace PrivateClassApp.Business.Concrete
             return await _educationRepository.GetByIdAsync(id);
         }
 
-        public void Update(Education education)
+		public async Task<Education> GetEducationFullDataAsync(int id)
+		{
+            return await _educationRepository.GetEducationFullDataAsync(id);
+		}
+
+		public void Update(Education education)
         {
             _educationRepository.Update(education);
         }

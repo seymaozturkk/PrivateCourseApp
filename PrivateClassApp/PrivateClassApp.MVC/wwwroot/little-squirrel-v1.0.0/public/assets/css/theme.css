@@ -3515,13 +3515,13 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
-  color: black;
+  color: white;
   background-color: #FDC800;
   border-color: #FDC800;
 }
 
 .btn-primary:hover {
-  color: #616161;
+  color: white;
   background-color: #fdd026;
   border-color: #fdce1a;
 }
@@ -18440,7 +18440,7 @@ ul {
 }
 
 .like:hover {
-    background-color: #FDC800;
+    border-bottom: 3px solid #FDC800;
     border-radius: 3px;
 }
 /*# sourceMappingURL=theme.css.map */

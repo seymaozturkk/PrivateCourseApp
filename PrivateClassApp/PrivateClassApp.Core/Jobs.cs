@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -164,6 +165,41 @@ namespace PrivateClassApp.Core
             text = text.Replace(" ", "");
             #endregion
             return text;
+        }
+        public static string UploadTeacherImage(IFormFile image)
+        {
+            var extension = Path.GetExtension(image.FileName);
+            var randomName = $"{Guid.NewGuid()}{extension}";
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/Teachers", randomName);
+            using (var stream = new FileStream(path, FileMode.Create))
+            {
+                image.CopyTo(stream);
+            }
+
+            return randomName;
+        }
+        public static string UploadStudentImage(IFormFile image)
+        {
+            var extension = Path.GetExtension(image.FileName);
+            var randomName = $"{Guid.NewGuid()}{extension}";
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/Students", randomName);
+            using (var stream = new FileStream(path, FileMode.Create))
+            {
+                image.CopyTo(stream);
+            }
+
+            return randomName;
+        }
+        public static string GetZoomLink()
+        {
+            string baseLink = "https://zoom.us/j/";
+            string apiKey = "abcdefghijklmnopqrstuvwxyz1234567890";
+
+            string meetingId = "1234567890";
+            string password = "1234567890";
+
+            string zoomLink = baseLink + apiKey + "?pwd=" + password + "&id=" + meetingId;
+            return zoomLink;
         }
     }
 }

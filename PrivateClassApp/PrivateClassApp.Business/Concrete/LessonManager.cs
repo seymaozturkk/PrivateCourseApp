@@ -38,9 +38,9 @@ namespace PrivateClassApp.Business.Concrete
             return await _lessonRepository.GetAllAsync();
         }
 
-        public async Task<List<Lesson>> GetAllFullDataAsync()
+        public async Task<List<Lesson>> GetAllFullDataAsync(string categoryurl)
         {
-            return await _lessonRepository.GetAllFullDataAsync();
+            return await _lessonRepository.GetAllFullDataAsync(categoryurl);
         }
 
         public async Task<Lesson> GetByIdAsync(int id)

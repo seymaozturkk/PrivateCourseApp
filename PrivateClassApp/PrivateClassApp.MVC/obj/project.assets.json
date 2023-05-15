@@ -38,6 +38,18 @@
           }
         }
       },
+      "Iyzipay/2.1.55": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.1/Iyzipay.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Iyzipay.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/7.0.4": {
         "type": "package",
         "compile": {
@@ -3732,6 +3744,19 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Iyzipay/2.1.55": {
+      "sha512": "w4UwGNahHAWBv12RK5qIwSiDcmV84bWzBsGJ7Gp2+T1OqFjF6ugQTWamMWIkfCogznd3xO1ftzST8aK9ou5Ypg==",
+      "type": "package",
+      "path": "iyzipay/2.1.55",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "iyzipay.2.1.55.nupkg.sha512",
+        "iyzipay.nuspec",
+        "lib/net45/Iyzipay.dll",
+        "lib/netstandard2.1/Iyzipay.dll"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/7.0.4": {
@@ -10409,6 +10434,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "AspNetCoreHero.ToastNotification >= 1.1.0",
+      "Iyzipay >= 2.1.55",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Sqlite >= 7.0.4",
@@ -10424,11 +10450,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitHub\\ERP7-Bitirme-Projesi\\PrivateClassApp\\PrivateClassApp.MVC\\PrivateClassApp.MVC.csproj",
+      "projectUniqueName": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.MVC\\PrivateClassApp.MVC.csproj",
       "projectName": "PrivateClassApp.MVC",
-      "projectPath": "C:\\GitHub\\ERP7-Bitirme-Projesi\\PrivateClassApp\\PrivateClassApp.MVC\\PrivateClassApp.MVC.csproj",
+      "projectPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.MVC\\PrivateClassApp.MVC.csproj",
       "packagesPath": "C:\\Users\\Şeyma Cankuş\\.nuget\\packages\\",
-      "outputPath": "C:\\GitHub\\ERP7-Bitirme-Projesi\\PrivateClassApp\\PrivateClassApp.MVC\\obj\\",
+      "outputPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Şeyma Cankuş\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10445,11 +10471,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\GitHub\\ERP7-Bitirme-Projesi\\PrivateClassApp\\PrivateClassApp.Business\\PrivateClassApp.Business.csproj": {
-              "projectPath": "C:\\GitHub\\ERP7-Bitirme-Projesi\\PrivateClassApp\\PrivateClassApp.Business\\PrivateClassApp.Business.csproj"
+            "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Business\\PrivateClassApp.Business.csproj": {
+              "projectPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Business\\PrivateClassApp.Business.csproj"
             },
-            "C:\\GitHub\\ERP7-Bitirme-Projesi\\PrivateClassApp\\PrivateClassApp.Core\\PrivateClassApp.Core.csproj": {
-              "projectPath": "C:\\GitHub\\ERP7-Bitirme-Projesi\\PrivateClassApp\\PrivateClassApp.Core\\PrivateClassApp.Core.csproj"
+            "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Core\\PrivateClassApp.Core.csproj": {
+              "projectPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Core\\PrivateClassApp.Core.csproj"
             }
           }
         }
@@ -10467,6 +10493,10 @@
           "AspNetCoreHero.ToastNotification": {
             "target": "Package",
             "version": "[1.1.0, )"
+          },
+          "Iyzipay": {
+            "target": "Package",
+            "version": "[2.1.55, )"
           },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",

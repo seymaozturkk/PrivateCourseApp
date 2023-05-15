@@ -1,4 +1,5 @@
 ﻿using AspNetCoreHero.ToastNotification.Abstractions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PrivateClassApp.Business.Abstract;
 using PrivateClassApp.Core;
@@ -8,7 +9,9 @@ using PrivateClassApp.MVC.Areas.Admin.Models.ViewModels;
 namespace PrivateClassApp.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class CategoriesController : Controller
+	[Authorize(Roles = "Admin")]
+
+	public class CategoriesController : Controller
     {
         private readonly ICategoryService _categoryService;
         private readonly INotyfService _notyfService;

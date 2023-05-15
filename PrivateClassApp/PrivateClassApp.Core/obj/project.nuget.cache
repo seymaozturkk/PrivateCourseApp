@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "szSdJkUGhu529qgQbdpkg9GHRYlPJw7hHhhCXYq7+4NDGVyP6H1DlJYWCX8/gjADouU3A0FDBoFCln0ETcVPjQ==",
+  "dgSpecHash": "AIwUQ73s/oKswD7C24Pu0BDdiaIJsjulubbG8ckYB7rccIMmpU2amjua8c2eC2//T3NkYBmg8NcKeHwHqWA+zQ==",
   "success": true,
-  "projectFilePath": "C:\\GitHub\\ERP7-Bitirme-Projesi\\PrivateClassApp\\PrivateClassApp.Core\\PrivateClassApp.Core.csproj",
+  "projectFilePath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Core\\PrivateClassApp.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Şeyma Cankuş\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\Şeyma Cankuş\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",

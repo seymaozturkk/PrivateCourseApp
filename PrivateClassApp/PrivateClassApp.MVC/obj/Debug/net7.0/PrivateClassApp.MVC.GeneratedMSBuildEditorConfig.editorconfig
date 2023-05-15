@@ -9,121 +9,221 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PrivateClassApp.MVC
 build_property.RootNamespace = PrivateClassApp.MVC
-build_property.ProjectDir = C:\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.MVC\
+build_property.ProjectDir = C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.MVC\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\GitHub\ERP7-Bitirme-Projesi\PrivateClassApp\PrivateClassApp.MVC
+build_property.MSBuildProjectDirectory = C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Categories/Create.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Categories/Edit.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Categories/Index.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Home/Index.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Lessons/Create.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Lessons/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGVzc29uc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Lessons/Edit.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Lessons/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGVzc29uc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Lessons/Index.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Lessons/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGVzc29uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Reservations/Index.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Reservations/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVzZXJ2YXRpb25zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Roles/Create.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Roles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Roles/Edit.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Roles/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Roles/Index.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Roles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Shared/_DataTablesScriptsPartial.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Shared/_DataTablesScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9EYXRhVGFibGVzU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Shared/_DataTablesStylesPartial.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Shared/_DataTablesStylesPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9EYXRhVGFibGVzU3R5bGVzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Shared/_Layout.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Shared/_HamburgerPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9IYW1idXJnZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Shared/_NavbarPartial.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Shared/_NavbarPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9OYXZiYXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Shared/_SideBarPartial.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Shared/_SideBarPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TaWRlQmFyUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Users/Create.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Users/Edit.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Users/Index.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Users/EditAdminProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRWRpdEFkbWluUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Views/Home/Index.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Account/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Account/ShowTeacherProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaG93VGVhY2hlclByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Admins/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXEVkaXRQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Views/Shared/_NavbarPartial.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Lessons/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Reservations/CheckOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25zXENoZWNrT3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Reservations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Reservations/ShowMyReservations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25zXFNob3dNeVJlc2VydmF0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Reservations/ShowTeacherReservations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25zXFNob3dUZWFjaGVyUmVzZXJ2YXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Shared/Components/Categories/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcmllc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Shared/_FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Shared/_LessonsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MZXNzb25zUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Shared/_NavbarPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Shared/_ReservationTimePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZXNlcnZhdGlvblRpbWVQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Shared/_UniversityEducationPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vbml2ZXJzaXR5RWR1Y2F0aW9uUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Views/_ViewImports.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Students/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRWRpdFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Teachers/AddLesson.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlcnNcQWRkTGVzc29uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Teachers/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlcnNcRWRpdFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Teachers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Teachers/TeacherDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlcnNcVGVhY2hlckRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Views/_ViewStart.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub/ERP7-Bitirme-Projesi/PrivateClassApp/PrivateClassApp.MVC/Views/Shared/_Layout.cshtml]
+[C:/Users/Şeyma Cankuş/Desktop/Erp7-Odevler-SeymaCankus/ERP7_BitirmeProjesi_SeymaCankus/PrivateClassApp/PrivateClassApp.MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-m7g58buvb7

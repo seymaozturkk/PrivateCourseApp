@@ -1,4 +1,5 @@
 ﻿@model LessonEditViewModel
+@await Html.PartialAsync("_HamburgerPartial")
 
 <h4 class="mt-5">Ders Güncelleme</h4>
 <hr />
@@ -49,10 +50,8 @@
                             {
                                 <li class="dropdown-item">
                                     <div class="form-check d-flex">
-                                        <input class="form-check-input" type="radio" name="TeacherId" value="@teacher.Id" @if (Model.TeacherId != null)
-                                        {
-                                            @(Model.TeacherId == teacher.Id ? "checked" : "")
-                                        }>
+                                        <input class="form-check-input" type="radio" name="TeacherId" value="@teacher.Id"
+                                            @(Model.TeacherId == teacher.Id ? "checked" : "")>
                                         <label class="form-check-label">@teacher.User.FirstName @teacher.User.LastName</label>
                                     </div>
                                 </li>

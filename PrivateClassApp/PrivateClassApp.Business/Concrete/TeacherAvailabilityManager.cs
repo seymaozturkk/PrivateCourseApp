@@ -33,6 +33,16 @@ namespace PrivateClassApp.Business.Concrete
             return await _repository.GetAllAsync();
         }
 
+        public async Task<List<TeacherAvailability>> GetAvailabilitiesByTeacherIdAsync(int id)
+        {
+            return await _repository.GetAvailabilitiesByTeacherIdAsync(id);
+        }
+
+        public async Task<TeacherAvailability> GetAvailabilityByTeacherIdByTimeAsync(int id, TimeSpan time)
+        {
+            return await _repository.GetAvailabilityByTeacherIdByTimeAsync(id, time);
+        }
+
         public async Task<TeacherAvailability> GetByIdAsync(int id)
         {
             return await _repository.GetByIdAsync(id);

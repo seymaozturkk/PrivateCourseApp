@@ -1,0 +1,68 @@
+﻿@model LessonAddViewModel
+<hr class="m-0"/>
+
+<div class="container mb-5">
+    <h4 class="mt-5">Ders Ekleme</h4>
+    <hr />
+    <form asp-area=""
+          asp-controller="Teachers"
+          asp-action="AddLesson"
+          method="post">
+        <div class="row">
+            <div class="col-5">
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label class="form-label" asp-for="Name"></label>
+                            <input class="form-control" asp-for="Name">
+                            <span class="text-danger" asp-validation-for="Name"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" asp-for="Price"></label>
+                            <input class="form-control" asp-for="Price">
+                            <span class="text-danger" asp-validation-for="Price"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary">Ekle</button>
+            </div>
+            <div class="col-6 ms-4">
+                <div class="mb-3">
+                    <label class="form-label" asp-for="Description"></label>
+                    <textarea class="form-control" asp-for="Description"></textarea>
+                    <span class="text-danger" asp-validation-for="Description"></span>
+                </div>
+                <div class="d-flex mt-4">
+                    <div class="form-check p-0">
+                        <div class="dropdown dropend">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Kategoriler
+                            </button>
+                            <ul class="dropdown-menu overflow-auto " style="height: 300px; z-index:1;">
+                                @foreach (var category in Model.Categories)
+                                {
+                                    <li class="dropdown-item">
+                                        <div class="form-check d-flex">
+                                            <input class="form-check-input" type="checkbox" name="SelectedCategories" value="@category.Id">
+                                            <label class="form-check-label">@category.Name</label>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                        <span class="text-danger" asp-validation-for="SelectedCategories"></span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+</div>
+@section Scripts{
+    @await Html.PartialAsync("_ValidationScriptsPartial");
+}

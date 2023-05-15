@@ -1,42 +1,64 @@
 ﻿<nav class="navbar navbar-expand-lg navbar-light sticky-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
     <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="~/little-squirrel-v1.0.0/public/assets/img/gallery/boyakalem.png" class="me-2" height="45" alt="logo" />Özel Ders</a>
+
+        <a class="fs-6 fs-xl-4 text-decoration-none" style="color:#002147;" href="index.html"><img src="~/little-squirrel-v1.0.0/public/assets/img/gallery/boyakalem.png" class="me-2" height="45" alt="logo" /><h2 class="d-inline">BireBir Akademi</h2></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
         <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
-                <li class="nav-item px-2"><a class="nav-link active" aria-current="page" href="index.html">Keşfet</a></li>
-                <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="pricing.html">Dersler</a></li>
-                <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="web-development.html">Eğitimciler</a></li>
                 @if (User.Identity.IsAuthenticated)
                 {
                     @if (User.IsInRole("Admin"))
                     {
-                        <li class="nav-item px-2"><a class="nav-link active" aria-current="page" href="/admin">Admin Paneli</a></li>
+                        <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="/admin">Admin Paneli</a></li>
                     }
+                }
+                <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="/">Keşfet</a></li>
+                <li class="nav-item px-2"><a class="nav-link" aria-current="page" asp-area="" asp-controller="Lessons" asp-action="Index">Dersler</a></li>
+                <li class="nav-item px-2"><a class="nav-link" aria-current="page" asp-area="" asp-controller="Teachers" asp-action="Index">Eğitmenler</a></li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item dropdown">
+                        <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-user me-1"></i> Hesap
+                        </button>
+                        <ul class="dropdown-menu bg-white">
+                            <li><a class="dropdown-item" asp-area="" asp-controller="Account" asp-action="ShowProfile">Profilim</a></li>
+                            <li><a class="dropdown-item" asp-area="" asp-controller="Reservations" asp-action="ShowMyReservations">Rezervasyonlarım</a></li>
+                            
+                            <li>
+                                <a href="/" class="dropdown-item">Beğendiklerim <i class="fa-regular fa-heart" style="color: #e50606;"></i> </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item btn order-1 order-lg-0" asp-area="" asp-controller="Account" asp-action="Logout">Çıkış Yap</a>
+                            </li>
+                        </ul>
+                    </li>
                 }
             </ul>
             <div class="ms-2">
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <a class="btn btn-primary order-1 order-lg-0 text-black" href="#!">Çıkış Yap</a>
-                    <a href="/" class="like"><i class="fa-regular fa-heart" style="color: #e50606;"></i></a>
                 }
                 else
                 {
-                    <a class="btn btn-primary order-1 order-lg-0" href="#!">Giriş Yap</a>
+                    <a class="btn btn-primary order-1 order-lg-0" asp-area="" asp-controller="Account" asp-action="Login">Giriş Yap</a>
                 }
             </div>
             <form class="d-flex my-3 d-block d-lg-none">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-primary" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Ara" />
+                <button class="btn btn-outline-primary" type="submit">Ara</button>
             </form>
-            <div class="dropdown d-none d-lg-block">
+            <div class="dropdown d-none d-lg-block ms-2">
                 <button class="btn btn-outline-light ms-2" id="dropdownMenuButton1" type="submit" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-search text-800"></i></button>
-                <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton1" style="top:55px">
+                <ul class="dropdown-menu dropdown-menu-lg-end p-0 m-0 rounded-2" aria-labelledby="dropdownMenuButton1" style="top:55px">
                     <form>
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                        <input class="form-control" type="search" placeholder="Ara" aria-label="Ara" />
                     </form>
                 </ul>
+            </div>
+            <div class="ms-2">
+                
             </div>
         </div>
     </div>

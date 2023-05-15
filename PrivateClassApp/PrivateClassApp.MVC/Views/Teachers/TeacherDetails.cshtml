@@ -1,0 +1,66 @@
+﻿@model TeacherViewModel
+@{
+	var dayList = Enum.GetValues(typeof(EnumDay));
+}
+<hr class="mt-0" />
+<div class="container">
+	<div class="row col-md-12">
+		<div class="col-md-2 col-6">
+			<img src="~/images/Teachers/@Model.ImageUrl" class="img-fluid rounded-circle p-3m-auto" alt="...">
+		</div>
+		<div class="col-md-10 col-6 mt-2">
+			<h1>@Model.FirstName @Model.LastName <span style="position:relative; bottom:15px;"><i class="fa-solid fa-circle-check mb-4 @(Model.IsApproved == false?  "d-none": "d-inline")" style="color: #39bec0; font-size:15px;"></i></span></h1>
+			<h5>@Model.Title</h5>
+			<p>@Model.About.ShortInfo</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-12">
+			<h4>Deneyim</h4>
+			<p>@Model.About.Experience</p>
+			<h4>Eğitim</h4>
+			@foreach (var item in @Model.About.Education.UniversityEducations)
+			{
+				<p><span class="fw-bold">@item.Description: </span>@item.University.Name</p>
+			}
+			<p><span class="fw-bold">Diğer Eğitimler: </span>@Model.About.Education.OtherEducations</p>
+
+		</div>
+		<div class="col-md-6 col-12">
+			<h4>Uygunluklar</h4>
+			@foreach (var day in dayList)
+			{
+				<span class="fw-bold">@day:</span>
+				@foreach (var item in Model.TeacherAvailabilities)
+				{
+
+					<span>@(item.DayOfWeek.ToString() == day.ToString() ? $"{item.Time.ToString("hh':'mm")}" : "")</span>
+
+				}
+				<br />
+			}
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal_@Model.FirstName">
+				Derslerini Gör
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal_@Model.FirstName" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel"> @Model.FirstName @Model.LastName Dersleri</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							@await Html.PartialAsync("_LessonsPartial",Model.Lessons)
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

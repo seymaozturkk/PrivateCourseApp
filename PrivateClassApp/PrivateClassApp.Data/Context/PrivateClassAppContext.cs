@@ -22,8 +22,7 @@ namespace PrivateClassApp.Data.Context
         public DbSet<Education> Educations { get; set; }
         public DbSet<Lesson> Lessons { get; set; }
         public DbSet<LessonCategory> LessonCategories { get; set; }
-        public DbSet<Like> Likes { get; set; }
-        public DbSet<LikedItem> LikedItems { get; set; }
+        public DbSet<LessonLike> LessonLikes { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Teacher> Teachers { get; set; }

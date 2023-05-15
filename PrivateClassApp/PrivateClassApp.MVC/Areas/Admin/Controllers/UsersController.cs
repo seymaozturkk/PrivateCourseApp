@@ -1,4 +1,5 @@
 ﻿using AspNetCoreHero.ToastNotification.Abstractions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -13,21 +14,23 @@ using System.Data;
 namespace PrivateClassApp.MVC.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize(Roles = "Admin")]
+
 	public class UsersController : Controller
 	{
 		private readonly UserManager<User> _userManager;
 		private readonly RoleManager<Role> _roleManager;
         private readonly INotyfService _notyfService;
-		private readonly ILikeService _likeService;
+		private readonly ILessonLikeService _lessonLikeService;
 		private readonly IStudentService _studentService;
 		private readonly ITeacherService _teacherService;
 
-        public UsersController(UserManager<User> userManager, RoleManager<Role> roleManager, INotyfService notyfService, ILikeService likeService, IStudentService studentService, ITeacherService teacherService)
+        public UsersController(UserManager<User> userManager, RoleManager<Role> roleManager, INotyfService notyfService, ILessonLikeService lessonLikeService, IStudentService studentService, ITeacherService teacherService)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _notyfService = notyfService;
-            _likeService = likeService;
+            _lessonLikeService = lessonLikeService;
             _studentService = studentService;
             _teacherService = teacherService;
         }
@@ -74,37 +77,38 @@ namespace PrivateClassApp.MVC.Areas.Admin.Controllers
 		{
 			var user = await _userManager.FindByIdAsync(id);
 			if (user == null) return NotFound();
-
-			if (user.UserType == EnumUserType.Öğrenci)
-			{
-				Student student = await _studentService.GetStudentByUserId(id);
-				if (student!=null)
-				{
-                    _studentService.Delete(student);
-                }
-            }
-			else if(user.UserType == EnumUserType.Öğretmen)
-			{
-				Teacher teacher = await _teacherService.GetTeacherByUserId(id);
-				if (teacher!=null)
-				{
-                    _teacherService.Delete(teacher);
-                }
-            }
-
-			Like like = await _likeService.GetLikeByUserId(id);
-			if (like!=null)
-			{
-                _likeService.Delete(like);
-            }
-
-            //var userRoles = await _userManager.GetRolesAsync(user);
-            //await _userManager.RemoveFromRolesAsync(
-            //                   user,
-            //                   userRoles.ToList<string>());
-
             await _userManager.DeleteAsync(user);
-            _notyfService.Error("Kullanıcı silindi!");
+
+   //         if (user.UserType == EnumUserType.Öğrenci)
+			//{
+			//	Student student = await _studentService.GetStudentByUserId(id);
+			//	if (student!=null)
+			//	{
+   //                 _studentService.Delete(student);
+   //             }
+   //         }
+			//else if(user.UserType == EnumUserType.Öğretmen)
+			//{
+			//	Teacher teacher = await _teacherService.GetTeacherByUserId(id);
+			//	if (teacher!=null)
+			//	{
+   //                 _teacherService.Delete(teacher);
+   //             }
+   //         }
+
+			//Like like = await _likeService.GetLikeByUserId(id);
+			//if (like!=null)
+			//{
+   //             _likeService.Delete(like);
+   //         }
+
+			//var userRoles = await _userManager.GetRolesAsync(user);
+			//await _userManager.RemoveFromRolesAsync(
+			//                   user,
+			//                   userRoles.ToList<string>());
+
+			
+			_notyfService.Error("Kullanıcı silindi!");
             return RedirectToAction("Index");
 		}
 		#endregion
@@ -235,10 +239,10 @@ namespace PrivateClassApp.MVC.Areas.Admin.Controllers
 							
 						}
                     }
-					await _likeService.CreateAsync(new Like
-					{
-						UserId = user.Id
-					});
+					//await _likeService.CreateAsync(new Like
+					//{
+					//	UserId = user.Id
+					//});
 					
                 }
 				return RedirectToAction("Index");
@@ -247,5 +251,17 @@ namespace PrivateClassApp.MVC.Areas.Admin.Controllers
 			return View(userAddViewModel);
 		}
 		#endregion
-	}
+		[HttpGet]
+		public async Task<IActionResult> EditAdminProfile()
+		{
+            var user = await _userManager.GetUserAsync(User);
+            return View(user);
+		}
+		[HttpPost]
+        public IActionResult EditAdminProfile(User user)
+		{
+			return View(user);
+		}
+
+    }
 }

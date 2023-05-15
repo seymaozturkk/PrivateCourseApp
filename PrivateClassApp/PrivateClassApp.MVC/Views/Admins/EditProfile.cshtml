@@ -1,0 +1,72 @@
+﻿@model AdminViewModel
+@{
+    var genderList = Enum.GetValues(typeof(EnumGender));
+}
+
+<hr class="m-0 p-0" />
+
+<div class="container mb-5">
+    <form asp-area=""
+          asp-controller="Students"
+          asp-action="EditProfile"
+          enctype="multipart/form-data">
+        <h4 class="mt-5">Kullanıcı İşlemleri</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label class="form-label" asp-for="FirstName"></label>
+                            <input class="form-control" asp-for="FirstName">
+                            <span class="text-danger" asp-validation-for="FirstName"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" asp-for="LastName"></label>
+                            <input class="form-control" asp-for="LastName">
+                            <span class="text-danger" asp-validation-for="LastName"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" asp-for="UserName"></label>
+                            <input class="form-control" asp-for="UserName">
+                            <span class="text-danger" asp-validation-for="UserName"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" asp-for="Email"></label>
+                            <input class="form-control" asp-for="Email">
+                            <span class="text-danger" asp-validation-for="Email"></span>
+                        </div>
+                        <div>
+                            @(Model.EmailConfirmed == true ? "E-mailiniz onaylıdır." : "")
+                            <span class="@(Model.EmailConfirmed==false? "d-inline" : "d-none")">E-Mailiniz onaylı değildir. <a asp-area="" asp-controller="Account" asp-action="ConfirmEmail">Buradan onaylayabilirsiniz.</a></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="mb-3">
+                    <label class="form-label" asp-for="BirthDate"></label>
+                    <input type="date" minvalue="1900-01-01" class="form-control" asp-for="BirthDate">
+                    <span class="text-danger" asp-validation-for="BirthDate"></span>
+                </div>
+                <p class="mt-4" style="font-weight:500;">Cinsiyet</p>
+                <div class="form-check d-flex">
+                    @foreach (var item in genderList)
+                    {
+                        <input class="form-check-input" type="radio" asp-for="Gender" value="@item">
+                        <label class="form-check-label me-5" for="Gender">
+                            @item
+                        </label>
+                    }
+                </div>
+                <span class="text-danger" asp-validation-for="Gender"></span>
+            </div>
+
+
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Profili Güncelle</button>
+
+    </form>
+</div>

@@ -14,5 +14,6 @@ namespace PrivateClassApp.Business.Abstract
         public Task<List<Education>> GetAllAsync();
         public void Update(Education education);
         public void Delete(Education education);
-    }
+		public Task<Education> GetEducationFullDataAsync(int id);
+	}
 }

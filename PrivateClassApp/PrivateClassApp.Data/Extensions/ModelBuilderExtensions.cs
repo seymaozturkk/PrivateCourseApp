@@ -32,11 +32,11 @@ namespace PrivateClassApp.Data.Extensions
                 new User{ Id = "c4b4a4a2-9ed4-4c48-aa35-53e9012021e7", FirstName="Ali", LastName="Yılmaz",NormalizedName="ALIYILMAZ", Url="ali-yilmaz", CreatedDate=DateTime.Now, UpdatedDate =DateTime.Now, BirthDate=new DateTime(1995,3,12),Gender=EnumGender.Erkek, UserType=(EnumUserType)2, UserName="aliyilmaz", NormalizedUserName="ALIYILMAZ", Email= "aliyilmaz@hotmail.com", NormalizedEmail="ALIYILMAZ@HOTMAIL.COM", EmailConfirmed=true},
 
                 new User{ Id = "2c2d40d8-2a3a-4833-9d9f-d5f1ecbb1c10", FirstName="Ayşe", LastName="Demir",NormalizedName="AYSEDEMIR", Url="ayse-demir",        CreatedDate=DateTime.Now, UpdatedDate =DateTime.Now, BirthDate=new DateTime   (1997,8,25),Gender=EnumGender.Kadın,      UserType=(EnumUserType) 2,  UserName="ayse.demir", NormalizedUserName="AYSEDEMIR",  Email= "ayse.demir@gmail.com",      NormalizedEmail="AYSE.DEMIR@GMAIL.COM",    EmailConfirmed=true},
-                
+
                 new User{ Id = "e8b7c309-0f80-4df1-aec8-92fb0d4ce4f4", FirstName="Mehmet", LastName="Kaya",NormalizedName="MEHMETKAYA",  Url="mehmet-kaya",     CreatedDate=DateTime.Now, UpdatedDate =DateTime.Now, BirthDate=new DateTime      (1994,6,8),Gender=EnumGender.Erkek,  UserType=(EnumUserType) 2,    UserName="mehmet.kaya", NormalizedUserName="MEHMETKAYA",   Email=    "m.kaya@hotmail.com",     NormalizedEmail="M.KAYA@HOTMAIL.COM",    EmailConfirmed=true},
-                
+
                 new User{ Id = "a17a2a35-1b72-42af-8d68-0b55faa60f22", FirstName="Elif", LastName="Şahin",NormalizedName="ELIFSAHIN", Url="elif-sahin",        CreatedDate=DateTime.Now, UpdatedDate =DateTime.Now, BirthDate=new DateTime   (2000,1,15),Gender=EnumGender.Kadın,      UserType=(EnumUserType) 2,  UserName="elif.sahin", NormalizedUserName="ELIFSAHIN",  Email= "elifsahin@gmail.com",   NormalizedEmail="ELIFSAHIN@GMAIL.COM",     EmailConfirmed=true},
-                
+
                 new User{ Id = "d3506b7c-d1b2-4ebc-9b45-60f8fc1f9cb2", FirstName="Mustafa", LastName="Arslan",NormalizedName="MUSTAFAARSLAN", Url="mustafa-arslan", CreatedDate=DateTime.Now, UpdatedDate =DateTime.Now, BirthDate=new DateTime       (1992,12,2),Gender=EnumGender.Erkek,  UserType=(EnumUserType) 2, UserName="m.arslan", NormalizedUserName="MARSLAN", Email= "mustafa.arslan@gmail.com", NormalizedEmail="MUSTAFA.ARSLAN@GMAIL.COM", EmailConfirmed=true},
 
                 new User{ Id = "2313b70e-6e75-4c1d-b8b5-5c5a5be9a5c5", FirstName="Gizem", LastName="Aksoy",NormalizedName="GIZEMAKSOY", Url="gizem-aksoy", CreatedDate=DateTime.Now, UpdatedDate =DateTime.Now, BirthDate=new DateTime(1996,5,21),Gender=EnumGender.Kadın, UserType=(EnumUserType) 2, UserName="gizem.aksoy", NormalizedUserName="GIZEMAKSOY", Email= "g.aksoy@hotmail.com", NormalizedEmail="G.AKSOY@HOTMAIL.COM", EmailConfirmed=true},
@@ -139,30 +139,6 @@ namespace PrivateClassApp.Data.Extensions
                 new IdentityUserRole<string>{ UserId=users[17].Id, RoleId=roles.FirstOrDefault(r=>r.Name=="User").Id}
             };
             modelBuilder.Entity<IdentityUserRole<string>>().HasData(userRoles);
-            #endregion
-            #region Beğeni Listesi İşlemleri
-            List<Like> carts = new List<Like>
-            {
-                new Like{Id=1, UserId=users[0].Id},
-                new Like{Id=2, UserId=users[1].Id},
-                new Like{Id=3, UserId=users[2].Id},
-                new Like{Id=4, UserId=users[3].Id},
-                new Like{Id=5, UserId=users[4].Id},
-                new Like{Id=6, UserId=users[5].Id},
-                new Like{Id=7, UserId=users[6].Id},
-                new Like{Id=8, UserId=users[7].Id},
-                new Like{Id=9, UserId=users[8].Id},
-                new Like{Id=10, UserId=users[9].Id},
-                new Like{Id=11, UserId=users[10].Id},
-                new Like{Id=12, UserId=users[11].Id},
-                new Like{Id=13, UserId=users[12].Id},
-                new Like{Id=14, UserId=users[13].Id},
-                new Like{Id=15, UserId=users[14].Id},
-                new Like{Id=16, UserId=users[15].Id},
-                new Like{Id=17, UserId=users[16].Id},
-                new Like{Id=18, UserId=users[17].Id},
-            };
-            modelBuilder.Entity<Like>().HasData(carts);
             #endregion
         }
     }

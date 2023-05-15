@@ -9,6 +9,5 @@ namespace PrivateClassApp.Data.Abstract
 {
     public interface IAboutRepository: IGenericRepository<About>
     {
-
     }
 }

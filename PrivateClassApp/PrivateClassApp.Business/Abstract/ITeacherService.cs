@@ -16,7 +16,9 @@ namespace PrivateClassApp.Business.Abstract
         public void Delete(Teacher teacher);
         Task<List<Teacher>> GetAllFullDataAsync();
         public Task<Teacher> GetTeacherByUserId(string userId);
-        public Task CreateTeacherAsync(Teacher teacher); 
+        public Task CreateTeacherAsync(Teacher teacher);
+		Task<Teacher> GetTeacherFullDataAsync(int id);
 
-    }
+
+	}
 }

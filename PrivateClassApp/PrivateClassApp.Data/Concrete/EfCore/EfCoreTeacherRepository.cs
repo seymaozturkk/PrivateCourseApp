@@ -47,7 +47,10 @@ namespace PrivateClassApp.Data.Concrete.EfCore
             return await AppContext
                 .Teachers
                 .Include(t => t.About)
+                .ThenInclude(t  => t.Education)
                 .Include(t => t.Lessons)
+                .ThenInclude(t => t.LessonCategories)
+                .ThenInclude(tl => tl.Category)
                 .Include(t => t.TeacherAvailabilities)
                 .ToListAsync();
         }
@@ -59,5 +62,21 @@ namespace PrivateClassApp.Data.Concrete.EfCore
                 .Where(x => x.UserId == userId)
                 .FirstOrDefaultAsync();
         }
-    }
+
+		public async Task<Teacher> GetTeacherFullDataAsync(int id)
+		{
+			return await AppContext
+				.Teachers
+                .Where(x => x.Id == id)
+				.Include(t => t.About)
+                .ThenInclude(t => t.Education)
+                .ThenInclude(t => t.UniversityEducations)
+                .ThenInclude(t => t.University)
+				.Include(t => t.Lessons)
+				.ThenInclude(t => t.LessonCategories)
+				.ThenInclude(tl => tl.Category)
+				.Include(t => t.TeacherAvailabilities)
+				.FirstOrDefaultAsync();
+		}
+	}
 }

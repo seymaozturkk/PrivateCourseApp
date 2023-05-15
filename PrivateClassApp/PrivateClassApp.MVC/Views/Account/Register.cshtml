@@ -1,0 +1,123 @@
+﻿@model RegisterViewModel
+@{
+    var genderList = Enum.GetValues(typeof(EnumGender));
+    var userTypeList = Enum.GetValues(typeof(EnumUserType));
+}
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="~/login-form-07/images/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-6 contents">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="mb-4">
+                            <h3 class="text-center">Kaydol</h3>
+                        </div>
+                        <form asp-area=""
+                              asp-controller="Account"
+                              asp-action="Register"
+                              method="post">
+                            <div class="form-check d-flex justify-content-center">
+                                <div>
+                                    <input class="form-check-input" type="radio" asp-for="UserType" value="@EnumUserType.Öğretmen">
+                                    <label class="form-check-label" for="UserType">
+                                        Öğretmen olarak kaydol
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="radio" asp-for="UserType" value="@EnumUserType.Öğrenci">
+                                    <label class="form-check-label" for="UserType">
+                                        Öğrenci olarak kaydol
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group first">
+                                <label asp-for="FirstName"></label>
+                                <input type="text" asp-for="FirstName" class="form-control">
+                                <span class="text-danger" asp-validation-for="FirstName"></span>
+
+                            </div>
+                            <div class="form-group first">
+                                <label asp-for="LastName"></label>
+                                <input type="text" asp-for="LastName" class="form-control">
+                                <span class="text-danger" asp-validation-for="LastName"></span>
+
+                            </div>
+                            <div class="form-group first field--not-empty">
+                                <label asp-for="BirthDate"></label>
+                                <input type="date" value="2023-05-17" class="form-control" asp-for="BirthDate">
+                                <span class="text-danger" asp-validation-for="BirthDate"></span>
+                            </div>
+                            <div class="form-group first">
+                                <div class="form-check d-flex justify-content-center">
+                                    @foreach (var item in genderList)
+                                    {
+                                        <div style="margin-right: 100px;">
+                                            <input class="form-check-input" type="radio" asp-for="Gender" value="@item">
+                                            <label class="form-check-label" for="Gender">
+                                                @item
+                                            </label>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                            <span class="text-danger" asp-validation-for="Gender"></span>
+                            <div class="form-group first">
+                                <label asp-for="Email"></label>
+                                <input asp-for="Email" class="form-control">
+                                <span class="text-danger" asp-validation-for="Email"></span>
+
+                            </div>
+                            <div class="form-group first">
+                                <label asp-for="UserName"></label>
+                                <input type="text" asp-for="UserName" class="form-control">
+                                <span class="text-danger" asp-validation-for="UserName"></span>
+
+                            </div>
+                            <div class="form-group first">
+                                <label asp-for="Password"></label>
+                                <input type="password" asp-for="Password" class="form-control">
+                                <span class="text-danger" asp-validation-for="Password"></span>
+                            </div>
+                            <div class="form-group last mb-4">
+                                <label asp-for="RePassword"></label>
+                                <input type="password" asp-for="RePassword" class="form-control">
+                                <span class="text-danger" asp-validation-for="RePassword"></span>
+                            </div>
+                            
+
+                            <button type="submit" class="btn btn-block btn-primary">Kaydol</button>
+
+                            <a class="d-block text-left my-4 text-center" asp-area="" asp-controller="Account" asp-action="Login">&mdash; Veya Giriş Yap &mdash;</a>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+@section Styles{
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/login-form-07/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="~/login-form-07/css/owl.carousel.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/login-form-07/css/bootstrap.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="~/login-form-07/css/style.css">
+}
+
+@section Scripts{
+    <script src="~/login-form-07/js/jquery-3.3.1.min.js"></script>
+    <script src="~/login-form-07/js/popper.min.js"></script>
+    <script src="~/login-form-07/js/bootstrap.min.js"></script>
+    <script src="~/login-form-07/js/main.js"></script>
+    @await Html.PartialAsync("_ValidationScriptsPartial");
+}

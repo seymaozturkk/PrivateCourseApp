@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3Nlvd0cSn686w7n6wXstP1zJ0KwfM/szSqbNGabW3iCgvVY73gEtV+xwfCfwdP7TJpILW7IS5uq59dBX28kJNg==",
+  "dgSpecHash": "JCjIDZOkQaUryq5lCv83ezRJEoDgt10O2F4VQmgoAtGdH9SL0lz3Zj45Tu+crv7U9Yu1YF53+Dx1SQdIcPBImA==",
   "success": true,
-  "projectFilePath": "C:\\GitHub\\ERP7-Bitirme-Projesi\\PrivateClassApp\\PrivateClassApp.Business\\PrivateClassApp.Business.csproj",
+  "projectFilePath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Business\\PrivateClassApp.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Şeyma Cankuş\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.4\\microsoft.aspnetcore.cryptography.internal.7.0.4.nupkg.sha512",
     "C:\\Users\\Şeyma Cankuş\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.4\\microsoft.aspnetcore.cryptography.keyderivation.7.0.4.nupkg.sha512",

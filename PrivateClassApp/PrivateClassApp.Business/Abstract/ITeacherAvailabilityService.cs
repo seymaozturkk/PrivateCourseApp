@@ -14,5 +14,7 @@ namespace PrivateClassApp.Business.Abstract
         public Task<List<TeacherAvailability>> GetAllAsync();
         public void Update(TeacherAvailability teacherAvailability);
         public void Delete(TeacherAvailability teacherAvailability);
+        public Task<List<TeacherAvailability>> GetAvailabilitiesByTeacherIdAsync(int id);
+        public Task<TeacherAvailability> GetAvailabilityByTeacherIdByTimeAsync(int id, TimeSpan time);
     }
 }

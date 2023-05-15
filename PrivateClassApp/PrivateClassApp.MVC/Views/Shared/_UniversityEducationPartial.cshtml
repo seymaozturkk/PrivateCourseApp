@@ -1,0 +1,31 @@
+﻿@model List<UniversityEducationModel>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Eğitim Düzeyi</th>
+            <th scope="col">Üniversite</th>
+            <th scope="col"></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Description
+                    </td>
+                    <td>
+                        @item.University.Name
+                    </td>
+                    <td>
+                        <button class="btn btn-danger" type="button" onclick="deleteEducation(@item.University.Id, @item.Education.Id)">Eğitimi Sil</button>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

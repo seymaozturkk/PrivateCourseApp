@@ -1,0 +1,28 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
+
+namespace PrivateClassApp.MVC.Models
+{
+    public class ResetPasswordViewModel
+    {
+        [Required]
+        public string Token { get; set; }
+
+        [DisplayName("Eposta Adresi")]
+        [Required(ErrorMessage = "Email adresi zorunludur!")]
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
+
+        [DisplayName("Parola")]
+        [Required(ErrorMessage = "Parola zorunludur")]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+
+        [DisplayName("Parola Tekrar")]
+        [Required(ErrorMessage = "Parola tekrar zorunludur")]
+        [DataType(DataType.Password)]
+        [Compare("Password", ErrorMessage = "Parolalar aynı olmalıdır!")]
+        public string RePassword { get; set; }
+
+    }
+}

@@ -9,5 +9,6 @@ namespace PrivateClassApp.Data.Abstract
 {
     public interface IEducationRepository : IGenericRepository<Education>
     {
+        public Task<Education> GetEducationFullDataAsync(int id);
     }
 }

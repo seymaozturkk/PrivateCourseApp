@@ -1,0 +1,93 @@
+﻿@model List<TeacherViewModel>
+
+<hr class="mt-0" />
+
+<div class="container-fluid">
+    <div class="row col-md-12">
+        <div class="col-md-3 col-12 px-5 mt-1">
+            <h1 class="fs-3 fw-normal ps-1">Branşlar</h1>
+
+            @if (ViewBag.Categories != null)
+            {
+                <div class="list-group">
+                    <a href="/teachers"
+                       class="list-group-item list-group-item-action @(ViewBag.SelectedCategory==null ? "active" : "")">
+                        Tüm Dersler
+                    </a>
+                    @foreach (var category in ViewBag.Categories)
+                    {
+                        <a asp-area=""
+                        asp-controller="Teachers"
+                        asp-action="Index"
+                        asp-route-categoryurl="@category.Url"
+                           class="list-group-item list-group-item-action">
+                            @category.Name
+                        </a>
+                    }
+                </div>
+            }
+            else
+            {
+                <h6 class="alert alert-danger">Kategori bilgisi bulunamamıştır!</h6>
+            }
+
+        </div>
+        <div class="col-md-9 col-12">
+            <div class="d-flex justify-content-between ms-3 me-5">
+                <h1 class="fs-3 fw-normal ps-1">Eğitmenler</h1>
+                <div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input approved" type="checkbox" role="switch" id="flexSwitchCheckDefault" onchange="ShowApprovedOnes()">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Sadece Onaylıları Göster</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex gap-5 text-center">
+
+                @foreach (var item in Model)
+                {
+                    <div class="col-xl-3 col-sm-5 col-6 p-0 m-auto">
+                        <div class="card m-0 p-0 border-none" style="width: 16rem;">
+                            <img src="~/images/Teachers/@item.ImageUrl" class="img-fluid rounded-circle p-3 w-50 m-auto" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">@item.FirstName @item.LastName <i class="fa-solid fa-circle-check @(item.IsApproved == false?  "d-none": "d-inline")" style="color: #39bec0; font-size:15px;"></i></h5>
+                                <p class="card-text">@(item.About.ShortInfo?.Substring(0,100) ?? "")<a asp-area="" asp-controller="Teachers" asp-action="ShowTeacherDetails" asp-route-id="@item.Id">...Devamını Oku</a></p>
+                                <a asp-area="" asp-controller="Teachers" asp-action="ShowTeacherDetails" asp-route-id="@item.Id" class="btn btn-primary">Detaylı Bilgi</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $(function(){
+            if (window.location.href.includes('IsApproved=true')){
+                $('.approved').prop('checked', true);
+            }
+        });
+
+        function ShowApprovedOnes() {
+            var isApproved = false;
+
+            if ($('.approved').prop('checked')) {
+                isApproved = true;
+            }
+
+            if (window.location.href.includes('IsApproved')) {
+                var index = window.location.href.indexOf('IsApproved=');
+                window.location.href = window.location.href.substring(0, index) + 'IsApproved=' + isApproved;
+            } else {
+                if (window.location.href.includes('categoryurl'))
+                    window.location.href = window.location.href + '&IsApproved=' + isApproved;
+                else
+                    window.location.href = window.location.href + '?categoryurl=&IsApproved=' + isApproved;
+
+            }
+        }
+    </script>
+}
+
