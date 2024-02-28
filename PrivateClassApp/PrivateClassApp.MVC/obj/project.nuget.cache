@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cfjIEkc7iA2F/p+Q5b7kuIiWH91Ya0XRhP8I5s+lYiYIzDdqF5iz9GLz35uNAZww47ujufdunc1HjPdV7LkBHQ==",
+  "dgSpecHash": "+a/oPH0Q72RZEOLiSuPs+WcORj2/UxYBOuHFyFv8rNvD6nfMrODRo2kyvLBy8Y4JPb6CAllp8lvh99D76ilb3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.MVC\\PrivateClassApp.MVC.csproj",
+  "projectFilePath": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.MVC\\PrivateClassApp.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Şeyma Cankuş\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",
     "C:\\Users\\Şeyma Cankuş\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

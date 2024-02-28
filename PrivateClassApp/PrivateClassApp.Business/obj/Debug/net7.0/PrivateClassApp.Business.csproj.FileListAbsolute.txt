@@ -49,3 +49,20 @@ C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_Sey
 C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Business\obj\Debug\net7.0\refint\PrivateClassApp.Business.dll
 C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Business\obj\Debug\net7.0\PrivateClassApp.Business.pdb
 C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Business\obj\Debug\net7.0\ref\PrivateClassApp.Business.dll
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\bin\Debug\net7.0\PrivateClassApp.Business.deps.json
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\bin\Debug\net7.0\PrivateClassApp.Business.dll
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\bin\Debug\net7.0\PrivateClassApp.Business.pdb
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\bin\Debug\net7.0\PrivateClassApp.Data.dll
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\bin\Debug\net7.0\PrivateClassApp.Entity.dll
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\bin\Debug\net7.0\PrivateClassApp.Data.pdb
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\bin\Debug\net7.0\PrivateClassApp.Entity.pdb
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\obj\Debug\net7.0\PrivateClassApp.Business.csproj.AssemblyReference.cache
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\obj\Debug\net7.0\PrivateClassApp.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\obj\Debug\net7.0\PrivateClassApp.Business.AssemblyInfoInputs.cache
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\obj\Debug\net7.0\PrivateClassApp.Business.AssemblyInfo.cs
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\obj\Debug\net7.0\PrivateClassApp.Business.csproj.CoreCompileInputs.cache
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\obj\Debug\net7.0\PrivateClassApp.Business.csproj.CopyComplete
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\obj\Debug\net7.0\PrivateClassApp.Business.dll
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\obj\Debug\net7.0\refint\PrivateClassApp.Business.dll
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\obj\Debug\net7.0\PrivateClassApp.Business.pdb
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Business\obj\Debug\net7.0\ref\PrivateClassApp.Business.dll

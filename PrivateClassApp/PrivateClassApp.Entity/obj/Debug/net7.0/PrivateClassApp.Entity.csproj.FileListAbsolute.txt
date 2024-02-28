@@ -34,3 +34,15 @@ C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_Sey
 C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Entity\obj\Debug\net7.0\refint\PrivateClassApp.Entity.dll
 C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Entity\obj\Debug\net7.0\PrivateClassApp.Entity.pdb
 C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Entity\obj\Debug\net7.0\ref\PrivateClassApp.Entity.dll
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Entity\bin\Debug\net7.0\PrivateClassApp.Entity.deps.json
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Entity\bin\Debug\net7.0\PrivateClassApp.Entity.dll
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Entity\bin\Debug\net7.0\PrivateClassApp.Entity.pdb
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Entity\obj\Debug\net7.0\PrivateClassApp.Entity.csproj.AssemblyReference.cache
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Entity\obj\Debug\net7.0\PrivateClassApp.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Entity\obj\Debug\net7.0\PrivateClassApp.Entity.AssemblyInfoInputs.cache
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Entity\obj\Debug\net7.0\PrivateClassApp.Entity.AssemblyInfo.cs
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Entity\obj\Debug\net7.0\PrivateClassApp.Entity.csproj.CoreCompileInputs.cache
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Entity\obj\Debug\net7.0\PrivateClassApp.Entity.dll
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Entity\obj\Debug\net7.0\refint\PrivateClassApp.Entity.dll
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Entity\obj\Debug\net7.0\PrivateClassApp.Entity.pdb
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Entity\obj\Debug\net7.0\ref\PrivateClassApp.Entity.dll

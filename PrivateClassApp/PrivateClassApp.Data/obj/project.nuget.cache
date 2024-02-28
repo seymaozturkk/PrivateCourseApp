@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W5DKtRoMXuaU87UaBRk/JPlbZMnY3jEtUVk65LxvZG/q4q72p75IX2rA26eK3y0e1wslq8OyW0FRSrJiA4pV/Q==",
+  "dgSpecHash": "KcrO35l6N76tySgQQn0uHi7EfcL8gC2cCSyKZK1kiiAs7zWkaimibHnLQY3GT3IvBMT83IDvGLI1dT2bcpmP6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Data\\PrivateClassApp.Data.csproj",
+  "projectFilePath": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Data\\PrivateClassApp.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Şeyma Cankuş\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Şeyma Cankuş\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.4\\microsoft.aspnetcore.cryptography.internal.7.0.4.nupkg.sha512",

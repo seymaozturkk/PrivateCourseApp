@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.MVC\\PrivateClassApp.MVC.csproj": {}
+    "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.MVC\\PrivateClassApp.MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Business\\PrivateClassApp.Business.csproj": {
+    "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Business\\PrivateClassApp.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Business\\PrivateClassApp.Business.csproj",
+        "projectUniqueName": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Business\\PrivateClassApp.Business.csproj",
         "projectName": "PrivateClassApp.Business",
-        "projectPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Business\\PrivateClassApp.Business.csproj",
+        "projectPath": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Business\\PrivateClassApp.Business.csproj",
         "packagesPath": "C:\\Users\\Şeyma Cankuş\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Business\\obj\\",
+        "outputPath": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Şeyma Cankuş\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Data\\PrivateClassApp.Data.csproj": {
-                "projectPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Data\\PrivateClassApp.Data.csproj"
+              "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Data\\PrivateClassApp.Data.csproj": {
+                "projectPath": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Data\\PrivateClassApp.Data.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Core\\PrivateClassApp.Core.csproj": {
+    "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Core\\PrivateClassApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Core\\PrivateClassApp.Core.csproj",
+        "projectUniqueName": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Core\\PrivateClassApp.Core.csproj",
         "projectName": "PrivateClassApp.Core",
-        "projectPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Core\\PrivateClassApp.Core.csproj",
+        "projectPath": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Core\\PrivateClassApp.Core.csproj",
         "packagesPath": "C:\\Users\\Şeyma Cankuş\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Core\\obj\\",
+        "outputPath": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Şeyma Cankuş\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -128,14 +128,14 @@
         }
       }
     },
-    "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Data\\PrivateClassApp.Data.csproj": {
+    "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Data\\PrivateClassApp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Data\\PrivateClassApp.Data.csproj",
+        "projectUniqueName": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Data\\PrivateClassApp.Data.csproj",
         "projectName": "PrivateClassApp.Data",
-        "projectPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Data\\PrivateClassApp.Data.csproj",
+        "projectPath": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Data\\PrivateClassApp.Data.csproj",
         "packagesPath": "C:\\Users\\Şeyma Cankuş\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Data\\obj\\",
+        "outputPath": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Şeyma Cankuş\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -152,8 +152,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Entity\\PrivateClassApp.Entity.csproj": {
-                "projectPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Entity\\PrivateClassApp.Entity.csproj"
+              "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Entity\\PrivateClassApp.Entity.csproj": {
+                "projectPath": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Entity\\PrivateClassApp.Entity.csproj"
               }
             }
           }
@@ -207,14 +207,14 @@
         }
       }
     },
-    "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Entity\\PrivateClassApp.Entity.csproj": {
+    "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Entity\\PrivateClassApp.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Entity\\PrivateClassApp.Entity.csproj",
+        "projectUniqueName": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Entity\\PrivateClassApp.Entity.csproj",
         "projectName": "PrivateClassApp.Entity",
-        "projectPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Entity\\PrivateClassApp.Entity.csproj",
+        "projectPath": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Entity\\PrivateClassApp.Entity.csproj",
         "packagesPath": "C:\\Users\\Şeyma Cankuş\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Entity\\obj\\",
+        "outputPath": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Şeyma Cankuş\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -268,14 +268,14 @@
         }
       }
     },
-    "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.MVC\\PrivateClassApp.MVC.csproj": {
+    "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.MVC\\PrivateClassApp.MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.MVC\\PrivateClassApp.MVC.csproj",
+        "projectUniqueName": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.MVC\\PrivateClassApp.MVC.csproj",
         "projectName": "PrivateClassApp.MVC",
-        "projectPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.MVC\\PrivateClassApp.MVC.csproj",
+        "projectPath": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.MVC\\PrivateClassApp.MVC.csproj",
         "packagesPath": "C:\\Users\\Şeyma Cankuş\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.MVC\\obj\\",
+        "outputPath": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Şeyma Cankuş\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -292,11 +292,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Business\\PrivateClassApp.Business.csproj": {
-                "projectPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Business\\PrivateClassApp.Business.csproj"
+              "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Business\\PrivateClassApp.Business.csproj": {
+                "projectPath": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Business\\PrivateClassApp.Business.csproj"
               },
-              "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Core\\PrivateClassApp.Core.csproj": {
-                "projectPath": "C:\\Users\\Şeyma Cankuş\\Desktop\\Erp7-Odevler-SeymaCankus\\ERP7_BitirmeProjesi_SeymaCankus\\PrivateClassApp\\PrivateClassApp.Core\\PrivateClassApp.Core.csproj"
+              "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Core\\PrivateClassApp.Core.csproj": {
+                "projectPath": "C:\\GitHub\\PrivateCourseApp\\PrivateClassApp\\PrivateClassApp.Core\\PrivateClassApp.Core.csproj"
               }
             }
           }

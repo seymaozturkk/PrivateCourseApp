@@ -34,3 +34,15 @@ C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_Sey
 C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\refint\PrivateClassApp.Core.dll
 C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.pdb
 C:\Users\Şeyma Cankuş\Desktop\Erp7-Odevler-SeymaCankus\ERP7_BitirmeProjesi_SeymaCankus\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\ref\PrivateClassApp.Core.dll
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Core\bin\Debug\net7.0\PrivateClassApp.Core.deps.json
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Core\bin\Debug\net7.0\PrivateClassApp.Core.dll
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Core\bin\Debug\net7.0\PrivateClassApp.Core.pdb
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.csproj.AssemblyReference.cache
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.AssemblyInfoInputs.cache
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.AssemblyInfo.cs
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.csproj.CoreCompileInputs.cache
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.dll
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\refint\PrivateClassApp.Core.dll
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\PrivateClassApp.Core.pdb
+C:\GitHub\PrivateCourseApp\PrivateClassApp\PrivateClassApp.Core\obj\Debug\net7.0\ref\PrivateClassApp.Core.dll
